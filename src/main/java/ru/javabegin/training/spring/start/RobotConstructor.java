@@ -16,5 +16,4 @@ public class RobotConstructor {
 		((ConfigurableApplicationContext)context).close();// закрытие контекста вручную
 		
 	}
-    C:\Users\Rost\Desktop\SPRING\3\lesson_3\RobotImpl2
 }

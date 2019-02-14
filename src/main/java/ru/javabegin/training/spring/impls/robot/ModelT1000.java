@@ -1,5 +1,6 @@
 package ru.javabegin.training.spring.impls.robot;
 
+import ru.javabegin.training.spring.impls.toshiba.ToshibaHand;
 import ru.javabegin.training.spring.interfaces.Hand;
 import ru.javabegin.training.spring.interfaces.Head;
 import ru.javabegin.training.spring.interfaces.Leg;
@@ -10,6 +11,30 @@ public class ModelT1000 implements Robot {
     private Hand hand;
     private Leg leg;
     private Head head;
+
+    public Hand getHand() {
+        return hand;
+    }
+
+    public void setHand(Hand hand) {
+        this.hand = hand;
+    }
+
+    public Leg getLeg() {
+        return leg;
+    }
+
+    public void setLeg(Leg leg) {
+        this.leg = leg;
+    }
+
+    public Head getHead() {
+        return head;
+    }
+
+    public void setHead(Head head) {
+        this.head = head;
+    }
 
     public ModelT1000() {
     }
@@ -32,5 +57,6 @@ public class ModelT1000 implements Robot {
     public void dance() {
         System.out.println("T1000 is dancing!");
     }
+
 
 }
