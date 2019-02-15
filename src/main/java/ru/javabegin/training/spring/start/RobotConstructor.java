@@ -12,7 +12,11 @@ public class RobotConstructor {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
 		ModelT1000 t1000 = (ModelT1000) context.getBean("t1000");
-		t1000.action();
+//		 System.out.println(t1000.getHead());
+		// t1000 = (ModelT1000) context.getBean("t1000");
+		// System.out.println(t1000.getHead());
+		// t1000 = (ModelT1000) context.getBean("t1000");
+		// System.out.println(t1000.getHead());
 		((ConfigurableApplicationContext)context).close();// закрытие контекста вручную
 		
 	}
