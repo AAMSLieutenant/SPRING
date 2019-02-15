@@ -4,14 +4,13 @@
        xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
        default-lazy-init="true"
-
 >
 
 
+    <import resource="sony.xml"/>
+    <import resource="toshiba.xml"/>
+
     <bean id="t1000" class="ru.javabegin.training.spring.impls.robot.ModelT1000" scope="singleton">
-        <!--<constructor-arg ref="SonyHand"/>-->
-        <!--<constructor-arg ref="SonyHead"/>-->
-        <!--<constructor-arg ref="SonyLeg"/>-->
 
         <constructor-arg index="0" value="black" type="java.lang.String"/>
         <constructor-arg index="1" value="2018" type="int"/>
@@ -23,14 +22,8 @@
 
     </bean>
 
-    <bean id="SonyHand" class="ru.javabegin.training.spring.impls.sony.SonyHand"/>
-    <bean id="SonyHead" class="ru.javabegin.training.spring.impls.sony.SonyHead"/>
-    <bean id="SonyLeg" class="ru.javabegin.training.spring.impls.sony.SonyLeg"/>
 
-    <bean id="ToshibaHand" class="ru.javabegin.training.spring.impls.toshiba.ToshibaHand"/>
-    <bean id="ToshibaHead" class="ru.javabegin.training.spring.impls.toshiba.ToshibaHead"/>
-    <bean id="ToshibaLeg" class="ru.javabegin.training.spring.impls.toshiba.ToshibaLeg"/>
 
-    <bean class="ru.javabegin.training.spring.start.MyBeanPostProcessor"/>
+
 
 </beans>
