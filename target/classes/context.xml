@@ -9,6 +9,10 @@
         <!--<constructor-arg ref="SonyHead"/>-->
         <!--<constructor-arg ref="SonyLeg"/>-->
 
+        <constructor-arg index="0" value="black" type="java.lang.String"/>
+        <constructor-arg index="1" value="2018" type="int"/>
+        <constructor-arg index="2" value="false" type="boolean"/>
+
         <property name="head" ref="ToshibaHead"/>
         <property name="hand" ref="ToshibaHand"/>
         <property name="leg" ref="ToshibaLeg"/>

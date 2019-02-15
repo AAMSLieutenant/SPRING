@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
@@ -8,6 +9,10 @@
         <!--<constructor-arg ref="SonyHand"/>-->
         <!--<constructor-arg ref="SonyHead"/>-->
         <!--<constructor-arg ref="SonyLeg"/>-->
+
+        <constructor-arg index="0" value="black" type="java.lang.String"/>
+        <constructor-arg index="1" value="2018" type="int"/>
+        <constructor-arg index="2" value="false" type="boolean"/>
 
         <property name="head" ref="ToshibaHead"/>
         <property name="hand" ref="ToshibaHand"/>
