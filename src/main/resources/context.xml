@@ -13,15 +13,23 @@
     <import resource="postprocessor.xml"/>
 
     <bean id="t1000" class="ru.javabegin.training.spring.impls.robot.ModelT1000" scope="singleton"
-    depends-on="databaseBean">
+    depends-on="databaseBean"
+    parent="baseModel">
 
         <constructor-arg index="0" value="black" type="java.lang.String"/>
         <constructor-arg index="1" value="2018" type="int"/>
         <constructor-arg index="2" value="false" type="boolean"/>
 
-        <property name="head" ref="ToshibaHead"/>
-        <property name="hand" ref="ToshibaHand"/>
-        <property name="leg" ref="ToshibaLeg"/>
+
+
+    </bean>
+
+    <bean id="baseModel" abstract="true">
+
+        <constructor-arg index="0" ref="ToshibaHead"/>
+        <constructor-arg index="1" ref="ToshibaHand"/>
+        <constructor-arg index="2" ref="ToshibaLeg"/>
+
 
     </bean>
 
