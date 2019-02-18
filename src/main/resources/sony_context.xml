@@ -5,9 +5,10 @@
         default-lazy-init="true">
 
 
+    <bean id="sonyHand" class="ru.javabegin.training.spring.impls.sony.SonyHand"/>
+    <bean id="sonyHead" class="ru.javabegin.training.spring.impls.sony.SonyHead"/>
+    <bean id="sonyLeg" class="ru.javabegin.training.spring.impls.sony.SonyLeg"/>
 
-    <bean id="ToshibaHand" class="ru.javabegin.training.spring.impls.toshiba.ToshibaHand"/>
-    <bean id="ToshibaHead" class="ru.javabegin.training.spring.impls.toshiba.ToshibaHead"/>
-    <bean id="ToshibaLeg" class="ru.javabegin.training.spring.impls.toshiba.ToshibaLeg"/>
+
 
 </beans>
