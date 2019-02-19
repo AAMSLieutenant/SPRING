@@ -1,4 +1,4 @@
-package ru.javabegin.training.spring.start;
+package ru.javabegin.training.spring.main;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
