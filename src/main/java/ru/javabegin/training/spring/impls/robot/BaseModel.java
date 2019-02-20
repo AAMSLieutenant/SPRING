@@ -1,4 +1,4 @@
-package ru.javabegin.training.spring.impls.robot;
+package ru.javabegin.training.spring.abstracts.robot;
 
 import ru.javabegin.training.spring.interfaces.Hand;
 import ru.javabegin.training.spring.interfaces.Head;

@@ -3,12 +3,12 @@ package ru.javabegin.training.spring.impls.robot;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-import ru.javabegin.training.spring.impls.robot.BaseModel;
+import  ru.javabegin.training.spring.abstracts.robot.BaseModel;
 import ru.javabegin.training.spring.interfaces.Hand;
 import ru.javabegin.training.spring.interfaces.Head;
 import ru.javabegin.training.spring.interfaces.Leg;
 
-public class ModelT1000 extends BaseModel implements InitializingBean, DisposableBean {
+public class ModelT1000 extends BaseModel  implements InitializingBean, DisposableBean {
 
     private String color;
     private int year;

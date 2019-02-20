@@ -42,10 +42,10 @@
         </constructor-arg>
     </bean>
 
-    <bean id="t1000ColdenPool" class="ru.javabegin.training.spring.impls.pool.T1000Pool">
-        <constructor-arg name="robotCollection"
-                         value="#{t1000Pool.robotCollection.?[color.toUpperCase() eq 'GOLD']}">
-        </constructor-arg>
-    </bean>
+    <!--<bean id="t1000ColdenPool" class="ru.javabegin.training.spring.impls.pool.T1000Pool">-->
+        <!--<constructor-arg name="robotCollection"-->
+                         <!--value="#{t1000Pool.robotCollection.?[color.toUpperCase() eq 'GOLD']}">-->
+        <!--</constructor-arg>-->
+    <!--</bean>-->
 
 </beans>

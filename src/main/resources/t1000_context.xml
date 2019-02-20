@@ -11,13 +11,13 @@
 
     <bean id="actionReplacer" class="ru.javabegin.training.spring.impls.robot.ActionReplacer"/>
 
-    <bean id="t1000" class="ru.javabegin.training.spring.impls.robot.ModelT1000" parent="baseModel" scope="prototype">
+    <bean id="t1000" class="ru.javabegin.training.spring.impls.robot.ModelT1000" parent="baseModel" scope="prototype" autowire="byType">
 
-        <constructor-arg value="silver" index="3" type="String" />
-        <constructor-arg value="2005" index="4" type="int" />
-        <constructor-arg value="true" index="5" type="boolean" />
+        <!-- 		<constructor-arg value="silver" index="3" type="String" /> -->
+        <!-- 		<constructor-arg value="2005" index="4" type="int" /> -->
+        <!-- 		<constructor-arg value="true" index="5" type="boolean" />	 -->
 
-        <replaced-method name="action" replacer="actionReplacer"></replaced-method>
+        <!-- 		<replaced-method name="action" replacer="actionReplacer"></replaced-method>	 -->
 
     </bean>
 
