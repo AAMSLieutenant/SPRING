@@ -1,9 +1,9 @@
 package ru.javabegin.training.spring.interfaces;
 
-import java.util.Map;
+import java.util.Collection;
 
 public interface RobotPool {
 
-    Map<String, Robot> getRobotCollection();
+    Collection<Robot> getRobotCollection();
 
 }

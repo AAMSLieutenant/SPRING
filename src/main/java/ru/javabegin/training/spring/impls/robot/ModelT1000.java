@@ -3,6 +3,7 @@ package ru.javabegin.training.spring.impls.robot;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
+import ru.javabegin.training.spring.impls.robot.BaseModel;
 import ru.javabegin.training.spring.interfaces.Hand;
 import ru.javabegin.training.spring.interfaces.Head;
 import ru.javabegin.training.spring.interfaces.Leg;
@@ -41,6 +42,7 @@ public class ModelT1000 extends BaseModel implements InitializingBean, Disposabl
         System.out.println("color: " + color);
         System.out.println("year: " + year);
         System.out.println("can play sound: " + soundEnabled);
+        System.out.println();
     }
 
 
